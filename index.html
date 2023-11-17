@@ -1,0 +1,358 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunat Panda</title>
+
+    <!-- daisyui import css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.3.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- font awesome import css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#31ae96] text-black">
+    <!-- navbar -->
+    <div class="navbar bg-[#ffdf00] text-sm sticky top-0 z-50">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#superiority">Keunggulan Sunat Panda</a>
+            </li>
+            <li tabindex="0">
+              <details>
+                <summary>Metode Sunat Panda</summary>
+                <ul class="p-2 bg-white text-black">
+                  <li>
+                    <a>Techno Sealer</a>
+                  </li>
+                  <li>
+                    <a>Super Ring Reborn V</a>
+                  </li>
+                  <li>
+                    <a>O Sealer</a>
+                  </li>
+                  <li>
+                    <a>Stapler</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href="#service">Layanan Khitan</a>
+            </li>
+            <li>
+              <a href="#testimonial">Testimoni</a>
+            </li>
+            <li>
+              <a href="#about-us">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
+        <div class="relative shrink-0">
+          <image
+            src="/assets/images/logo-sunat-panda.png"
+            class="h-10 w-10"
+            alt="logo sunat panda"
+          />
+        </div>
+        <ul class="menu menu-horizontal px-1 hidden lg:flex shrink-0">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#superiority">Keunggulan Sunat Panda</a>
+          </li>
+          <li tabindex="{0}">
+            <details>
+              <summary>Metode Sunat Panda</summary>
+              <ul class="p-2 bg-white text-black">
+                <li>
+                  <a>Techno Sealer</a>
+                </li>
+                <li>
+                  <a>Super Ring Reborn V</a>
+                </li>
+                <li>
+                  <a>O Sealer</a>
+                </li>
+                <li>
+                  <a>Stapler</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="#service">Layanan Khitan</a>
+          </li>
+          <li>
+            <a href="#testimonial">Testimoni</a>
+          </li>
+          <li>
+            <a href="#about-us">Tentang Kami</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end space-x-2">
+        <input
+          type="text"
+          placeholder="Search"
+          class="rounded-md py-1.5 px-2 bg-white"
+        />
+        <button
+          class="rounded-md bg-[#ffdf00] border border-[#31ae96] hover:bg-[#31ae96] py-1.5 px-2"
+        >
+          Cari
+        </button>
+      </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- carousel -->
+    <div class="carousel w-full z-10">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="assets/images/carousel-1.png" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide4" class="btn btn-circle bg-[#ffdf00]">❮</a>
+          <a href="#slide2" class="btn btn-circle bg-[#ffdf00]">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="assets/images/carousel-2.jpeg" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle bg-[#ffdf00]">❮</a>
+          <a href="#slide3" class="btn btn-circle bg-[#ffdf00]">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="assets/images/carousel-3.jpeg" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle bg-[#ffdf00]">❮</a>
+          <a href="#slide4" class="btn btn-circle bg-[#ffdf00]">❯</a>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+
+    <!-- method methode section -->
+    <section id="methode" class="mx-auto lg:max-w-6xl px-8 w-full md:px-16 py-5">
+      <h3 class="text-2xl text-center font-semibold mb-5">
+        Metode Sunat Panda
+      </h3>
+      <div class="grid grid-cols-2 gap-6">
+        <div
+          class="action-section col-span-2 md:col-span-1 flex flex-col justify-center items-center space-y-5"
+        >
+          <img
+            src="assets/images/panda-section-2.png"
+            class="h-80 w-fit"
+            alt=""
+          />
+          <div class="flex w-full">
+            <button
+              class="bg-gradient-to-r from-yellow-400 to-green-400 border-none py-1 w-full rounded-full cursor-pointer font-bold hover:text-white"
+            >
+              Klik Reservasi Khitan
+            </button>
+            <img
+              src="assets/images/icons-arrow.png"
+              class="transform scale-x-[-1]"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="methods col-span-2 md:col-span-1 w-full flex flex-col justify-around gap-5"
+        >
+          <div class="flex justify-between">
+            <a
+              href="/sdj"
+              class="item text-white text-center cursor-pointer space-y-2"
+            >
+              <i class="fas fa-glass-martini fa-3x"></i>
+              <p>Stapler</p>
+            </a>
+            <a
+              href="/sdj"
+              class="item text-white text-center cursor-pointer space-y-2"
+            >
+              <i class="fas fa-tablets fa-3x"></i>
+              <p>O Sealer</p>
+            </a>
+          </div>
+          <div class="flex justify-between">
+            <a
+              href="/sdj"
+              class="item text-white text-center cursor-pointer space-y-2"
+            >
+              <i class="fas fa-v fa-3x"></i>
+              <p>
+                Super Ring <br />
+                Reborn V
+              </p>
+            </a>
+            <a
+              href="/sdj"
+              class="item text-white text-center cursor-pointer space-y-2"
+            >
+              <i class="fas fa-bolt fa-3x color"></i>
+              <p>Techno Sealer</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end method methode section -->
+
+    <!-- method superiority section -->
+    <img id="superiority" class="py-7" src="assets/images/keunggulan.png" alt="" />
+    <!-- end method superiority section -->
+
+    <!-- khitan service section -->
+    <section id="service" class="wrapper relative">
+      <img
+        class="absolute z-10"
+        src="assets/images/layanan-khitan.jpg"
+        alt=""
+      />
+      <div class="flex justify-center">
+        <button
+          class="bg-gradient-to-r from-yellow-400 to-green-400 border-none py-2 px-12 rounded-full cursor-pointer font-bold hover:text-white absolute z-50"
+        >
+          Layanan Home Visit
+        </button>
+      </div>
+    </section>
+    <!-- end khitan service section -->
+
+    <!-- testimonial section -->
+    <section id="testimonial" class="mx-auto lg:max-w-6xl px-8 w-full md:px-16 py-5">
+      <h3 class="text-2xl text-center font-semibold mb-5">
+        Review Testimonial Sunat Panda
+      </h3>
+      <div class="items grid grid-cols-3 gap-6">
+        <div class="item col-span-3 lg:col-span-1">
+          <h5 class="text-black mb-2 text-center font-semibold lg:text-left">
+            Rekomendasi Orang Tua
+          </h5>
+          <iframe
+            class="embed-responsive-item w-full h-auto"
+            src="assets/images/video-testimonial1.mp4"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="item col-span-3 lg:col-span-1">
+          <h5 class="text-black mb-2 text-center font-semibold lg:text-left">
+            Review Proses Sunat
+          </h5>
+          <iframe
+            class="embed-responsive-item w-full h-auto"
+            src="assets/images/video-testimonial2.mp4"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="item col-span-3 lg:col-span-1">
+          <h5 class="text-black mb-2 text-center font-semibold lg:text-left">
+            Review Pasca Sunat
+          </h5>
+          <iframe
+            class="embed-responsive-item w-full h-auto"
+            src="assets/images/vide-testimonial3.mp4"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial section -->
+
+    <!-- about us section -->
+    <section id="about-us" class="mx-auto lg:max-w-6xl px-8 w-full md:px-16 py-5">
+      <div class="grid grid-cols-2 gap-6 flex items-center">
+        <div class="col-span-2 md:col-span-1">
+          <h3 class="text-2xl text-center font-semibold mb-5">Tentang Kami</h3>
+          <p class="text-center">
+            Sunat Panda yang merupakan singkatan dari Sunat Tanpa Derita
+            menerapkan konsep sunat yang cukup aman dan nyaman, menyenangkan
+            serta mengedepankan keselamatan. Didirikan oleh tenaga medis
+            profesional Bapak David Margiy yang memiliki pengalaman lebih dari
+            12 tahun dan sekaligus merupakan trainer sunat wilayah Jember dan
+            tapal kuda. Beliau juga selaku owner dari KLINIK IBU SINA SEJAHTERA.
+            Hingga kini Sunat Panda selalu upgrade skill, dan juga selalu
+            melakukan banyak inovasi dalam menaikkan mutu pelayanan. Sehingga
+            kami akan selalu konsisten memberikan pelayanan yang bagus agar
+            semua pasien Sunat Panda Jember mendapatkan pelayanan dan hasil
+            terbaik. Sunat Panda selalu berupaya mengubah persepsi masyarakat
+            pada tentang sunat yang menakutkan dan menyakitkan menjadi sunat
+            yang aman dan menyenangkan. Sunat Panda ingin setiap pasien yang
+            melakukan tindakan sunat modern, merasa Sunat itu aman menyenangkan,
+            sehat dan tidak menyisakan rasa sakit.
+          </p>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15793.997735478973!2d113.6747322!3d-8.2529818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6975bcc2a94a3%3A0x384e552fefb0758c!2sSunat%20Panda%20by%20Klinik%20Ibnu%20Sina%20Sejahtera!5e0!3m2!1sen!2sid!4v1698488613508!5m2!1sen!2sid"
+            class="w-full"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- end about us section -->
+    <!-- Script for tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      // .wrapper set height follow the image
+      const wrapper = document.querySelector(".wrapper");
+      const img = document.querySelector(".wrapper img");
+      wrapper.style.height = img.offsetHeight + "px";
+
+      // the button follow the image height 2/3 and width to center the button
+      const btn = document.querySelector(".wrapper button");
+      btn.style.top = img.offsetHeight / 1.5 + "px";
+    </script>
+  </body>
+</html>
